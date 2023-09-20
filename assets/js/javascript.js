@@ -26,7 +26,7 @@ function createQuiz(){
 function showResults(){
     const answerContainers = quizContainer.querySelectAll('.answers');
     
-    let nuCorrect = 0;
+    let numCorrect = 0;
     
     myQuestions.forEach( (currentQuestion, questionNumber) => {
         
@@ -74,9 +74,9 @@ const myQuestions = [
     {
         question: "In the 1994-95 which club had the smallest Stadium?",
             answers: {
-                a: "Southampton-The Dell"
-                b: "Norwich-Carrow Road"
-                c: "Queens Park Rangers-Loftus Road"
+                a: "Southampton-The Dell",
+                b: "Norwich-Carrow Road",
+                c: "Queens Park Rangers-Loftus Road",
                 d: "Ipswich Town-Portman Road"
             },
             correctAnswer: "a"
@@ -103,7 +103,7 @@ const myQuestions = [
         },
     {
         question: "In 1997-98 the golden boot was shared between 3 players who each scored 18 goals, which player didn't share the golden boot?",
-            answers: 
+            answers: {
                 a: "Andy Cole",
                 b: "Chris Sutton",
                 c: "Michael Owen",
@@ -122,246 +122,227 @@ const myQuestions = [
             correctAnswer: "b"
         },
     {
-        question: 
+        question: "1999-2000 Alan Sherarer scored 5 goals in one game against which team?",
             answers: {
-                a:
-                    b:
-                c:
-                    d:
+                a: "Sunderland",
+                b: "Bradford City",
+                c: "Sheffield Wednesday",
+                d: "Watford"
             },
-            correctAnswer:
+            correctAnswer: "c"
         },
     {
-        question: {
+        question: "Which team finished the highest in the 2000-01 season?",
             answers: {
-                a:
-                    b:
-                c:
-                    d:
+                a: "Everton",
+                b: "Southampton",
+                c: "Charlton Athletic",
+                d: "Ipswich"
             },
-            correctAnswer:
+            correctAnswer: "d"
         },
     {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
+        question: "In the 2001-02 season who mad the most yellow cards?",
+        answers: {
+            a: "Danny Mills",
+            b: "Patrick Vieria",
+            c: "Paul Ince",
+            d: "Robbie Savage"
         },
+        correctAnswer: "d"
+    },
+        {
+            question: "Which team kept the most clean sheets in the 2002-03 season?",
+                answers: {
+            a: "Bolton Wanderers",
+            b: "Blackburn Rovers",
+            c: "Tottenham Hotspur",
+            d: "Liverpool"
+        },
+        correctAnswer: "b"
+    },
+        {
+            question: "How many points did Arsenal finish on in their invincible season",
+                answers: {
+            a: "88",
+            b: "95",
+            c: "90",
+            d: "77"
+        },
+        correctAnswer: "c" 
+    },
     {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
+            question: "How many points did Arsenal finish on in their invincible season",
+                answers: {
+            a: "88",
+            b: "95",
+            c: "90",
+            d: "77"
         },
+        correctAnswer: "c"
+    },
     {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
+        question: "How many clean sheets did Petr Cech keep in his first season as a keeper?",
+        answers: {
+            a: "15",
+            b: "19",
+            c: "30",
+            d: "25"
         },
+        correctAnswer: "d"
+    },
     {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
+        question: "In the 2005-06 season how many Premier League managers were sacked?",
+        answers: {
+            a: "3",
+            b: "5",
+            c: "0",
+            d: "7"
         },
+        correctAnswer: "a" 
+    },
+        {
+            question: "Which team won the least amount of games at home in the 2006-07?",
+            answers: {
+            a: "Wigan Athletic",
+            b: "Watford",
+            c: "Reading",
+            d: "Fulham"
+        },
+        correctAnswer: "b"
+    },
     {
-        question: {
+            question: "In the 2007-08 season Derby finished the season with one win, who did they beat?",
             answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
+            a: "Liverpool",
+            b: "Manchester City",
+            c: "Newcastle",
+            d: "Wigan Athletic"
         },
+        correctAnswer: "c"
+    },
     {
-        question: {
+            question: "Who scored the first own goal of the 2008-09 season?",
             answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
+            a: "Steve Sidwell",
+            b: "Kenwyne Jones",
+            c: "Ryan Giggs",
+            d: "Robert Huth"
         },
+        correctAnswer: "d"
+    },
     {
-        question: {
+            question: "In the 2009-10 Chelsea failed to score against one team in the Premier League, who was that team?",
             answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
+            a: "Birmingham",
+            b: "Wolves",
+            c: "Burnley",
+            d: "Everton"
         },
+        correctAnswer: "a"
+    },
     {
-        question: {
+            question: "How many teams were up for relegation on the final day of the season in the year 2010-11?",
             answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
+            a: "5",
+            b: "0",
+            c: "3",
+            d: "2"
         },
+        correctAnswer: "a"
+    },
     {
-        question: {
+            question: "Who scored Swanesa City's first ever Premier League goal?",
             answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
+            a: "Scott Sinclair",
+            b: "Ashley Williams",
+            c: "Gary Monk",
+            d: "Nathan Dyer"
         },
+        correctAnswer: "a"
+    },
+     {
+            question: "How many goals did Michu score in the 2012-13 season?",
+            answers: {
+            a: "20",
+            b: "15",
+            c: "7",
+            d: "18"
+        },
+        correctAnswer: "d"
+    },
+     {
+            question: "Which team qualified for the Europa League by finsihing runners up in the FA Cup Final in 2013-14?",
+            answers: {
+            a: "Stoke City",
+            b: "Hull City",
+            c: "Swansea City",
+            d: "Southampton"
+        },
+        correctAnswer: "b"
+    },
+     {
+            question: "Who had the most yellow cards in the 2014-15 season?",
+            answers: {
+            a: "Tom Huddlestone",
+            b: "Ashley Cole",
+            c: "Lee Cattermole",
+            d: "Ryan Bertand"
+        },
+        correctAnswer: "c"
+    },
+     {
+            question: "How much did Leicester City pay for N'Golo Kante?",
+            answers: {
+            a: "£5.6 Million",
+            b: "£13.7 Million",
+            c: "£9.5 Million",
+            d: "£400 Thousand"
+        },
+        correctAnswer: "a"
+    },
+     {
+            question: "Who won the young player of the year award in the 2016-17 season?",
+            answers: {
+            a: "Romleu Lukaku",
+            b: "Leroy Sane",
+            c: "Dele Ali",
+            d: "Michael Keane"
+        },
+        correctAnswer: "c"
+    },
+     {
+            question: "Huddersfield completed their first ever double over which Premier League opponent in the 2017/18?",
+            answers: {
+            a: "Burnley",
+            b: "West Brom",
+            c: "Bournemouth",
+            d: "Watford"
+        },
+        correctAnswer: "b"
+    },
     {
-        question: {
+            question: "In 2018-19 the golden boot was shared between 3 players who each scored 22 goals, which player didn't share the golden boot?",
             answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
+            a: "Aubameyang",
+            b: "Mane",
+            c: "Son",
+            d: "Salah"
         },
+        correctAnswer: "c"
+    },
     {
-        question: {
+            question: "In 2018-19 the golden boot was shared between 3 players who each scored 22 goals, which player didn't share the golden boot?",
             answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
+            a: "Aubameyang",
+            b: "Mane",
+            c: "Son",
+            d: "Salah"
         },
-    {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
-        },
-    {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
-        },
-    {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
-        },
-    {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
-        },
-    {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
-        },
-    {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
-        },
-    {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
-        },
-    {
-        question: {
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
-        },
-    {
-        question: 
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
-        },
-    {
-        question: 
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
-        },
-    {
-        question: 
-            answers: {
-                a:
-                    b:
-                c:
-                    d:
-            },
-            correctAnswer:
-        },
-    }
+        correctAnswer: "c"
+    },
+];
+    
 ];
 
 createQuiz();
