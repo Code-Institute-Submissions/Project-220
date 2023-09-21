@@ -50,9 +50,9 @@ const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 
 
-const myQuestions = [
-    {
-        question: "Who won the frist ever Premier League Trophy in the 1992-93 season?",
+    const myQuestions = [
+        {
+            question: "Who won the frist ever Premier League Trophy in the 1992-93 season?",
             answers: {
                 a: "Manchester United",
                 b: "Blackburn Rovers",
@@ -61,8 +61,8 @@ const myQuestions = [
             },
             correctAnswer: "a"
         },
-    {
-        question: "In the season 1993-94 who became the most expensive footballer signed by an English Football team?",
+        {
+            question: "In the season 1993-94 who became the most expensive footballer signed by an English Football team?",
             answers: {
                 a: "Andy Townsend",
                 b: "Roy Keane",
@@ -71,8 +71,8 @@ const myQuestions = [
             },
             correctAnswer: "b"
         },
-    {
-        question: "In the 1994-95 which club had the smallest Stadium?",
+        {
+            question: "In the 1994-95 which club had the smallest Stadium?",
             answers: {
                 a: "Southampton-The Dell",
                 b: "Norwich-Carrow Road",
@@ -81,8 +81,8 @@ const myQuestions = [
             },
             correctAnswer: "a"
         },
-    {
-        question: "Blackburn Rovers recored the lowest ever finsh by a Premier League title holder. Where did they finish in 1995-96",
+        {
+            question: "Blackburn Rovers recored the lowest ever finsh by a Premier League title holder. Where did they finish in 1995-96",
             answers: {
                 a: "9th",
                 b: "15th",
@@ -91,8 +91,8 @@ const myQuestions = [
             },
             correctAnswer: "d"
         },
-    {
-        question: "In 1996-97 Wimbledon had to play their home games at which stadium?",
+        {
+            question: "In 1996-97 Wimbledon had to play their home games at which stadium?",
             answers: {
                 a: "Boleyn Ground",
                 b: "Stamford Bridge",
@@ -101,8 +101,8 @@ const myQuestions = [
             },
             correctAnswer: "d"
         },
-    {
-        question: "In 1997-98 the golden boot was shared between 3 players who each scored 18 goals, which player didn't share the golden boot?",
+        {
+            question: "In 1997-98 the golden boot was shared between 3 players who each scored 18 goals, which player didn't share the golden boot?",
             answers: {
                 a: "Andy Cole",
                 b: "Chris Sutton",
@@ -111,8 +111,8 @@ const myQuestions = [
             },
             correctAnswer: "a"
         },
-    {
-        question: "Which team had the longest unbeaten run in the 1998-99 season?",
+        {
+            question: "Which team had the longest unbeaten run in the 1998-99 season?",
             answers: {
                 a: "West Ham",
                 b: "Chelsea",
@@ -121,8 +121,8 @@ const myQuestions = [
             },
             correctAnswer: "b"
         },
-    {
-        question: "1999-2000 Alan Sherarer scored 5 goals in one game against which team?",
+        {
+            question: "1999-2000 Alan Sherarer scored 5 goals in one game against which team?",
             answers: {
                 a: "Sunderland",
                 b: "Bradford City",
@@ -131,8 +131,8 @@ const myQuestions = [
             },
             correctAnswer: "c"
         },
-    {
-        question: "Which team finished the highest in the 2000-01 season?",
+        {
+            question: "Which team finished the highest in the 2000-01 season?",
             answers: {
                 a: "Everton",
                 b: "Southampton",
@@ -141,209 +141,237 @@ const myQuestions = [
             },
             correctAnswer: "d"
         },
-    {
-        question: "In the 2001-02 season who mad the most yellow cards?",
-        answers: {
-            a: "Danny Mills",
-            b: "Patrick Vieria",
-            c: "Paul Ince",
-            d: "Robbie Savage"
+        {
+            question: "In the 2001-02 season who mad the most yellow cards?",
+            answers: {
+                a: "Danny Mills",
+                b: "Patrick Vieria",
+                c: "Paul Ince",
+                d: "Robbie Savage"
+            },
+            correctAnswer: "d"
         },
-        correctAnswer: "d"
-    },
         {
             question: "Which team kept the most clean sheets in the 2002-03 season?",
-                answers: {
-            a: "Bolton Wanderers",
-            b: "Blackburn Rovers",
-            c: "Tottenham Hotspur",
-            d: "Liverpool"
+            answers: {
+                a: "Bolton Wanderers",
+                b: "Blackburn Rovers",
+                c: "Tottenham Hotspur",
+                d: "Liverpool"
+            },
+            correctAnswer: "b"
         },
-        correctAnswer: "b"
-    },
         {
             question: "How many points did Arsenal finish on in their invincible season",
-                answers: {
-            a: "88",
-            b: "95",
-            c: "90",
-            d: "77"
+            answers: {
+                a: "88",
+                b: "95",
+                c: "90",
+                d: "77"
+            },
+            correctAnswer: "c"
         },
-        correctAnswer: "c" 
-    },
-    {
+        {
             question: "How many points did Arsenal finish on in their invincible season",
-                answers: {
-            a: "88",
-            b: "95",
-            c: "90",
-            d: "77"
+            answers: {
+                a: "88",
+                b: "95",
+                c: "90",
+                d: "77"
+            },
+            correctAnswer: "c"
         },
-        correctAnswer: "c"
-    },
-    {
-        question: "How many clean sheets did Petr Cech keep in his first season as a keeper?",
-        answers: {
-            a: "15",
-            b: "19",
-            c: "30",
-            d: "25"
+        {
+            question: "How many clean sheets did Petr Cech keep in his first season as a keeper?",
+            answers: {
+                a: "15",
+                b: "19",
+                c: "30",
+                d: "25"
+            },
+            correctAnswer: "d"
         },
-        correctAnswer: "d"
-    },
-    {
-        question: "In the 2005-06 season how many Premier League managers were sacked?",
-        answers: {
-            a: "3",
-            b: "5",
-            c: "0",
-            d: "7"
+        {
+            question: "In the 2005-06 season how many Premier League managers were sacked?",
+            answers: {
+                a: "3",
+                b: "5",
+                c: "0",
+                d: "7"
+            },
+            correctAnswer: "a"
         },
-        correctAnswer: "a" 
-    },
         {
             question: "Which team won the least amount of games at home in the 2006-07?",
             answers: {
-            a: "Wigan Athletic",
-            b: "Watford",
-            c: "Reading",
-            d: "Fulham"
+                a: "Wigan Athletic",
+                b: "Watford",
+                c: "Reading",
+                d: "Fulham"
+            },
+            correctAnswer: "b"
         },
-        correctAnswer: "b"
-    },
-    {
+        {
             question: "In the 2007-08 season Derby finished the season with one win, who did they beat?",
             answers: {
-            a: "Liverpool",
-            b: "Manchester City",
-            c: "Newcastle",
-            d: "Wigan Athletic"
+                a: "Liverpool",
+                b: "Manchester City",
+                c: "Newcastle",
+                d: "Wigan Athletic"
+            },
+            correctAnswer: "c"
         },
-        correctAnswer: "c"
-    },
-    {
+        {
             question: "Who scored the first own goal of the 2008-09 season?",
             answers: {
-            a: "Steve Sidwell",
-            b: "Kenwyne Jones",
-            c: "Ryan Giggs",
-            d: "Robert Huth"
+                a: "Steve Sidwell",
+                b: "Kenwyne Jones",
+                c: "Ryan Giggs",
+                d: "Robert Huth"
+            },
+            correctAnswer: "d"
         },
-        correctAnswer: "d"
-    },
-    {
+        {
             question: "In the 2009-10 Chelsea failed to score against one team in the Premier League, who was that team?",
             answers: {
-            a: "Birmingham",
-            b: "Wolves",
-            c: "Burnley",
-            d: "Everton"
+                a: "Birmingham",
+                b: "Wolves",
+                c: "Burnley",
+                d: "Everton"
+            },
+            correctAnswer: "a"
         },
-        correctAnswer: "a"
-    },
-    {
+        {
             question: "How many teams were up for relegation on the final day of the season in the year 2010-11?",
             answers: {
-            a: "5",
-            b: "0",
-            c: "3",
-            d: "2"
+                a: "5",
+                b: "0",
+                c: "3",
+                d: "2"
+            },
+            correctAnswer: "a"
         },
-        correctAnswer: "a"
-    },
-    {
+        {
             question: "Who scored Swanesa City's first ever Premier League goal?",
             answers: {
-            a: "Scott Sinclair",
-            b: "Ashley Williams",
-            c: "Gary Monk",
-            d: "Nathan Dyer"
+                a: "Scott Sinclair",
+                b: "Ashley Williams",
+                c: "Gary Monk",
+                d: "Nathan Dyer"
+            },
+            correctAnswer: "a"
         },
-        correctAnswer: "a"
-    },
-     {
+        {
             question: "How many goals did Michu score in the 2012-13 season?",
             answers: {
-            a: "20",
-            b: "15",
-            c: "7",
-            d: "18"
+                a: "20",
+                b: "15",
+                c: "7",
+                d: "18"
+            },
+            correctAnswer: "d"
         },
-        correctAnswer: "d"
-    },
-     {
+        {
             question: "Which team qualified for the Europa League by finsihing runners up in the FA Cup Final in 2013-14?",
             answers: {
-            a: "Stoke City",
-            b: "Hull City",
-            c: "Swansea City",
-            d: "Southampton"
+                a: "Stoke City",
+                b: "Hull City",
+                c: "Swansea City",
+                d: "Southampton"
+            },
+            correctAnswer: "b"
         },
-        correctAnswer: "b"
-    },
-     {
+        {
             question: "Who had the most yellow cards in the 2014-15 season?",
             answers: {
-            a: "Tom Huddlestone",
-            b: "Ashley Cole",
-            c: "Lee Cattermole",
-            d: "Ryan Bertand"
+                a: "Tom Huddlestone",
+                b: "Ashley Cole",
+                c: "Lee Cattermole",
+                d: "Ryan Bertand"
+            },
+            correctAnswer: "c"
         },
-        correctAnswer: "c"
-    },
-     {
+        {
             question: "How much did Leicester City pay for N'Golo Kante?",
             answers: {
-            a: "£5.6 Million",
-            b: "£13.7 Million",
-            c: "£9.5 Million",
-            d: "£400 Thousand"
+                a: "£5.6 Million",
+                b: "£13.7 Million",
+                c: "£9.5 Million",
+                d: "£400 Thousand"
+            },
+            correctAnswer: "a"
         },
-        correctAnswer: "a"
-    },
-     {
+        {
             question: "Who won the young player of the year award in the 2016-17 season?",
             answers: {
-            a: "Romleu Lukaku",
-            b: "Leroy Sane",
-            c: "Dele Ali",
-            d: "Michael Keane"
+                a: "Romleu Lukaku",
+                b: "Leroy Sane",
+                c: "Dele Ali",
+                d: "Michael Keane"
+            },
+            correctAnswer: "c"
         },
-        correctAnswer: "c"
-    },
-     {
+        {
             question: "Huddersfield completed their first ever double over which Premier League opponent in the 2017/18?",
             answers: {
-            a: "Burnley",
-            b: "West Brom",
-            c: "Bournemouth",
-            d: "Watford"
+                a: "Burnley",
+                b: "West Brom",
+                c: "Bournemouth",
+                d: "Watford"
+            },
+            correctAnswer: "b"
         },
-        correctAnswer: "b"
-    },
-    {
+        {
             question: "In 2018-19 the golden boot was shared between 3 players who each scored 22 goals, which player didn't share the golden boot?",
             answers: {
-            a: "Aubameyang",
-            b: "Mane",
-            c: "Son",
-            d: "Salah"
+                a: "Aubameyang",
+                b: "Mane",
+                c: "Son",
+                d: "Salah"
+            },
+            correctAnswer: "c"
         },
-        correctAnswer: "c"
-    },
-    {
-            question: "In 2018-19 the golden boot was shared between 3 players who each scored 22 goals, which player didn't share the golden boot?",
+        {
+            question: "What was the first game played after the pandemic break finished?",
             answers: {
-            a: "Aubameyang",
-            b: "Mane",
-            c: "Son",
-            d: "Salah"
+                a: "Sheffield Utd vs Chelsea",
+                b: "Manchester City vs Manchester Utd",
+                c: "Bouremouth vs Fulham",
+                d: "Aston Villa vs Sheffield Utd"
+            },
+            correctAnswer: "d"
         },
-        correctAnswer: "c"
-    },
-];
-    
-];
+        {
+            question: "Which one of these players did not score a hattrick in the 2020-21 season?",
+            answers: {
+                a: "Chris Wood",
+                b: "Tammy Abraham",
+                c: "Gareth Bale",
+                d: "Ollie Watkins"
+            },
+            correctAnswer: "b"
+        },
+        {
+            question: "Which one of these players was not in the PFA team of the season for 2021-22?",
+            answers: {
+                a: "Joao Cancelo",
+                b: "Thiago",
+                c: "Cristiano Ronaldo",
+                d: "Harry Kane"
+            },
+            correctAnswer: "d"
+        },
+        {
+            question: "How many Managerial sackings were there in the 2022-23 season?",
+            answers: {
+                a: "14",
+                b: "10",
+                c: "5",
+                d: "16"
+            },
+            correctAnswer: "a"
+        },
+    ];
 
 createQuiz();
 
