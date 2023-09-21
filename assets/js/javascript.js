@@ -15,8 +15,11 @@ function createQuiz(){
                 );
             }
     output.push(
-        `<div class="question"> ${currentQuestion.question} </div>
-        <div class="answers"> ${answers.join('')} </div>`
+
+        `<div class="slide">
+            <div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join("")} </div>
+          </div>`
     );
         }
     );
@@ -44,6 +47,8 @@ function showResults(){
     });
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 }
+
+
 
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
@@ -374,6 +379,13 @@ const submitButton = document.getElementById('submit');
     ];
 
 createQuiz();
+
+const previousButton = document.getElementById('previous-question');
+const nextButton = doucemnt.getElementById('next-question');
+const slides = doucemnt.querySelectAll('.slide');
+let currentSlide = 0;
+
+
 
 submitButton.addEventListener('click', showResults)
 })();
