@@ -1,88 +1,86 @@
-(function(){
-function createQuiz(){
-    const output = [];
+(function () {
+    function createQuiz() {
+        const output = [];
 
-    myQuestions.forEach(
-        (currentQuestion, questionNumber) => {
-            const answers = [];
-            for(letter in currentQuestion.answers){
-                answers.push(
-                    `<label>
-                    <input type="radio" name="question${questionNumber}"value="${letter}">
-                    ${letter} :
-                    ${currentQuestion.answers[letter]}
-                    </label>`
-                );
-            }
-    output.push(
+        myQuestions.forEach(
+            (currentQuestion, questionNumber) => {
+                const answers = [];
+                for (letter in currentQuestion.answers) {
 
-        `<div class="slide">
+                    answers.push(
+                        `<label>
+                         <input type="radio" name="question${questionNumber}" value="${letter}">
+                         ${letter} :
+                         ${currentQuestion.answers[letter]}
+                         </label>`
+                    );
+                }
+
+        output.push(
+            `<div class="slide">
             <div class="question"> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join("")} </div>
           </div>`
-    );
+                );
+            }
+        );
+        quizContainer.innerHTML = output.join('');
+    }
+
+    function showResults() {
+        const answerContainers = quizContainer.querySelectorAll('.answers');
+
+        let numCorrect = 0;
+
+        myQuestions.forEach((currentQuestion, questionNumber) => {
+
+            const answerContainer = answerContainers[questionNumber];
+            const selector = `input[name=question${questionNumber}]:checked`;
+            const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+            if (userAnswer === currentQuestion.correctAnswer) {
+                numCorrect++;
+                answerContainers[questionNumber].style.color = 'lightgreen';
+            }
+            else {
+                answerContainers[questionNumber].style.color = 'red';
+            }
+        });
+        resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    }
+
+    function showSlide(n) {
+        slides[currentSlide].classList.remove('active-slide');
+        slides[n].classList.add('active-slide');
+        currentSlide = n;
+        if (currentSlide === 0) {
+            previousButton.style.display = 'none';
         }
-    );
-    quizContainer.innerHTML = output.join('');
-}
-
-function showResults(){
-    const answerContainers = quizContainer.querySelectAll('.answers');
-    
-    let numCorrect = 0;
-    
-    myQuestions.forEach( (currentQuestion, questionNumber) => {
-        
-        const answerContainer = answerContainers[questionNumber];
-        const selector = `input[name=questions${questionNumber}]:checked`;
-        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-        if(userAnswer === currentQuestion.correctAnswer){
-            numCorrect++;
-            answerContainers[questionNumber].style.color = 'lightgreen';
+        else {
+            previousButton.style.display = 'inline-block';
         }
-        else{
-            answerContainers[questionNumber].style.color = 'red';
+        if (currentSlide === slides.length - 1) {
+            nextButton.style.display = 'none';
+            submitButton.style.display = 'inline-block';
         }
-    });
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-}
-
-function showSlide(n) {
-    slides[currentSlide].classList.remove('active-slide');
-    slides[n].classList.add('active-slide');
-    currentSlide = n;
-    if(currentSlide === 0){
-      previousButton.style.display = 'none';
+        else {
+            nextButton.style.display = 'inline-block';
+            submitButton.style.display = 'none';
+        }
     }
-    else{
-      previousButton.style.display = 'inline-block';
+
+    function showNextSlide() {
+        showSlide(currentSlide + 1);
     }
-    if(currentSlide === slides.length-1){
-      nextButton.style.display = 'none';
-      submitButton.style.display = 'inline-block';
+
+    function showPreviousSlide() {
+        showSlide(currentSlide - 1);
     }
-    else{
-      nextButton.style.display = 'inline-block';
-      submitButton.style.display = 'none';
-    }
-  }
-
-  function showNextSlide() {
-    showSlide(currentSlide + 1);
-  }
-
-  function showPreviousSlide() {
-    showSlide(currentSlide - 1);
-  }
 
 
-
-const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
-const submitButton = document.getElementById('submit');
-
-
+    const quizContainer = document.getElementById('quiz');
+    const resultsContainer = document.getElementById('results');
+    const submitButton = document.getElementById('submit');
     const myQuestions = [
         {
             question: "Who won the frist ever Premier League Trophy in the 1992-93 season?",
@@ -406,17 +404,19 @@ const submitButton = document.getElementById('submit');
         },
     ];
 
-createQuiz();
 
-const previousButton = document.getElementById('previous-question');
-const nextButton = doucemnt.getElementById('next-question');
-const slides = doucemnt.querySelectAll('.slide');
-let currentSlide = 0;
+    createQuiz();
 
-showSlide(currentSlide);
+    
+    const previousButton = document.getElementById("previous-question");
+    const nextButton = document.getElementById("next-question");
+    const slides = document.querySelectorAll(".slide");
+    let currentSlide = 0;
 
-submitButton.addEventListener('click', showResults);
+   
+    showSlide(currentSlide);
 
-previousButton.addEventListener("click", showPreviousSlide);
-nextButton.addEventListener("click", showNextSlide);
+    submitButton.addEventListener('click', showResults);
+    previousButton.addEventListener("click", showPreviousSlide);
+    nextButton.addEventListener("click", showNextSlide);
 })();
