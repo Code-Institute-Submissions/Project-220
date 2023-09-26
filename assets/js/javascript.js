@@ -40,7 +40,7 @@
 
             if (userAnswer === currentQuestion.correctAnswer) {
                 numCorrect++;
-                answerContainers[questionNumber].style.color = 'lightgreen';
+                answerContainers[questionNumber].style.color = 'green';
             }
             else {
                 answerContainers[questionNumber].style.color = 'red';
@@ -113,7 +113,7 @@
             correctAnswer: "a"
         },
         {
-            question: "4. Blackburn Rovers record the lowest ever finish by a Premier League title holder. Where did they finish in 1995-96",
+            question: "4. Blackburn Rovers recorded the lowest ever finish by a Premier League title holder. Where did they finish in 1995-96?",
             answers: {
                 a: "9th",
                 b: "15th",
@@ -193,7 +193,7 @@
             correctAnswer: "b"
         },
         {
-            question: "12. How many points did Arsenal finish on in their invincible season",
+            question: "12. How many points did Arsenal finish on in their invincible season back in the 2003-04 season?",
             answers: {
                 a: "88",
                 b: "95",
@@ -203,17 +203,7 @@
             correctAnswer: "c"
         },
         {
-            question: "13. How many points did Arsenal finish on in their invincible season",
-            answers: {
-                a: "88",
-                b: "95",
-                c: "90",
-                d: "77"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "14. How many clean sheets did Petr Cech keep in his first season as a keeper?",
+            question: "13. How many clean sheets did Petr Cech keep in his first season as a keeper in 2004-05 season?",
             answers: {
                 a: "15",
                 b: "19",
@@ -223,7 +213,7 @@
             correctAnswer: "d"
         },
         {
-            question: "15. In the 2005-06 season how many Premier League managers were sacked?",
+            question: "14. In the 2005-06 season how many Premier League managers were sacked?",
             answers: {
                 a: "3",
                 b: "5",
@@ -233,7 +223,7 @@
             correctAnswer: "a"
         },
         {
-            question: "16. Which team won the least amount of games at home in the 2006-07?",
+            question: "15. Which team won the least amount of games at home in the 2006-07?",
             answers: {
                 a: "Wigan Athletic",
                 b: "Watford",
@@ -243,7 +233,7 @@
             correctAnswer: "b"
         },
         {
-            question: "17. In the 2007-08 season Derby finished the season with one win, who did they beat?",
+            question: "16. In the 2007-08 season Derby finished the season with one win, who did they beat?",
             answers: {
                 a: "Liverpool",
                 b: "Manchester City",
@@ -253,7 +243,7 @@
             correctAnswer: "c"
         },
         {
-            question: "18. Who scored the first own goal of the 2008-09 season?",
+            question: "17. Who scored the first own goal of the 2008-09 season?",
             answers: {
                 a: "Steve Sidwell",
                 b: "Kenwyne Jones",
@@ -263,7 +253,7 @@
             correctAnswer: "d"
         },
         {
-            question: "19. In the 2009-10 Chelsea failed to score against one team in the Premier League, who was that team?",
+            question: "18. In the 2009-10 Chelsea failed to score against one team in the Premier League, who was that team?",
             answers: {
                 a: "Birmingham",
                 b: "Wolves",
@@ -273,7 +263,7 @@
             correctAnswer: "a"
         },
         {
-            question: "20. How many teams were up for relegation on the final day of the season in the year 2010-11?",
+            question: "19. How many teams were up for relegation on the final day of the season in the year 2010-11?",
             answers: {
                 a: "5",
                 b: "0",
@@ -283,7 +273,7 @@
             correctAnswer: "a"
         },
         {
-            question: "21. Who scored Swansea City's first ever Premier League goal?",
+            question: "20. Who scored Swansea City's first ever Premier League goal?",
             answers: {
                 a: "Scott Sinclair",
                 b: "Ashley Williams",
@@ -293,7 +283,7 @@
             correctAnswer: "a"
         },
         {
-            question: "22. How many goals did Michu score in the 2012-13 season?",
+            question: "21. How many goals did Michu score in the 2012-13 season?",
             answers: {
                 a: "20",
                 b: "15",
@@ -303,7 +293,7 @@
             correctAnswer: "d"
         },
         {
-            question: "23. Which team qualified for the Europa League by finishing runners up in the FA Cup Final in 2013-14?",
+            question: "22. Which team qualified for the Europa League by finishing runners up in the FA Cup Final in 2013-14?",
             answers: {
                 a: "Stoke City",
                 b: "Hull City",
@@ -313,7 +303,7 @@
             correctAnswer: "b"
         },
         {
-            question: "24. Who had the most yellow cards in the 2014-15 season?",
+            question: "23. Who had the most yellow cards in the 2014-15 season?",
             answers: {
                 a: "Tom Huddlestone",
                 b: "Ashley Cole",
@@ -323,7 +313,7 @@
             correctAnswer: "c"
         },
         {
-            question: "25. How much did Leicester City pay for N'Golo Kante?",
+            question: "24. How much did Leicester City pay for N'Golo Kante?",
             answers: {
                 a: "£5.6 Million",
                 b: "£13.7 Million",
@@ -333,7 +323,7 @@
             correctAnswer: "a"
         },
         {
-            question: "26. Who won the young player of the year award in the 2016-17 season?",
+            question: "25. Who won the young player of the year award in the 2016-17 season?",
             answers: {
                 a: "Romelu Lukaku",
                 b: "Leroy Sane",
@@ -343,7 +333,7 @@
             correctAnswer: "c"
         },
         {
-            question: "27. Huddersfield completed their first ever double over which Premier League opponent in the 2017/18?",
+            question: "26. Huddersfield completed their first ever double over which Premier League opponent in the 2017/18?",
             answers: {
                 a: "Burnley",
                 b: "West Brom",
@@ -353,7 +343,7 @@
             correctAnswer: "b"
         },
         {
-            question: "28. In 2018-19 the golden boot was shared between 3 players who each scored 22 goals, which player didn't share the golden boot?",
+            question: "27. In 2018-19 the golden boot was shared between 3 players who each scored 22 goals, which player didn't share the golden boot?",
             answers: {
                 a: "Aubameyang",
                 b: "Mane",
@@ -363,9 +353,9 @@
             correctAnswer: "c"
         },
         {
-            question: "29. What was the first game played after the pandemic break finished?",
+            question: "28. What was the first game played after the pandemic break finished?",
             answers: {
-                a: "Sheffield Utd vs Chelsea",
+                a: "Manchester City vs Arsenal",
                 b: "Manchester City vs Manchester Utd",
                 c: "Bournemouth vs Fulham",
                 d: "Aston Villa vs Sheffield Utd"
@@ -373,7 +363,7 @@
             correctAnswer: "d"
         },
         {
-            question: "30. Which one of these players did not score a hattrick in the 2020-21 season?",
+            question: "29. Which one of these players did not score a hattrick in the 2020-21 season?",
             answers: {
                 a: "Chris Wood",
                 b: "Tammy Abraham",
@@ -383,7 +373,7 @@
             correctAnswer: "b"
         },
         {
-            question: "31. Which one of these players was not in the PFA team of the season for 2021-22?",
+            question: "30. Which one of these players was not in the PFA team of the season for 2021-22?",
             answers: {
                 a: "Joao Cancelo",
                 b: "Thiago",
@@ -393,7 +383,7 @@
             correctAnswer: "d"
         },
         {
-            question: "32. How many Managerial sackings were there in the 2022-23 season?",
+            question: "31. How many Managerial sackings were there in the 2022-23 season?",
             answers: {
                 a: "14",
                 b: "10",

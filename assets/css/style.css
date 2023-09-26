@@ -1,21 +1,24 @@
 body {
     font-family: 'Inter', sans-serif;
     text-align: center;
-    background-color: #C0C0C0;
+    background-image: url('../images/background-pitch.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
     text-align: center;
+    font-size: 40px;
 }
 
 .question{
-  font-size: 30px;
+  font-size: 50px;
   margin-bottom: 50px;
 }
 
 .answers {
-  font-size: 30px;  
-  margin-bottom: 20px;
+  font-size: 50px;  
+  margin-bottom: 50px;
   text-align: left;
   display: inline-block;
 }
@@ -26,11 +29,11 @@ h1 {
 }
 
 button{
-    font-size: 20px;
+    font-size: 50px;
     cursor: pointer;
-    height: 60px;
+    height: 80px;
     position: relative;
-    margin-top: 10%;
+    margin-top: 20%;
     background-color: #0000FF;
     border: 0px;
 	border-radius: 3px;
@@ -111,6 +114,58 @@ button{
         padding: 20px;
         color: #FFFFFF;
     }
+}
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .question {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
 
+    .answers {
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: left;
+        display: inline-block;
+    }
+
+    button {
+        font-size: 30px;
+        cursor: pointer;
+        height: 60px;
+        position: relative;
+        margin-top: 25%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 20px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .question {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .answers {
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: left;
+        display: inline-block;
+    }
+
+    button {
+        font-size: 40px;
+        cursor: pointer;
+        height: 60px;
+        position: relative;
+        margin-top: 25%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 20px;
+        color: #FFFFFF;
+    }
 }
