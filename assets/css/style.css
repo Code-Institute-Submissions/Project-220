@@ -1,9 +1,10 @@
 body {
     font-family: 'Inter', sans-serif;
     text-align: center;
-    background-image: url('../images/background-pitch.jpg');
+    background-image: url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    color: black;
 }
 
 h1 {
@@ -11,9 +12,13 @@ h1 {
     font-size: 40px;
 }
 
+p {
+    font-size: 30px;
+}
+
 .question{
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .answers {
@@ -33,7 +38,7 @@ button{
     cursor: pointer;
     height: 80px;
     position: relative;
-    margin-top: 20%;
+    margin-top: 15%;
     background-color: #0000FF;
     border: 0px;
 	border-radius: 3px;
@@ -48,7 +53,7 @@ button{
   width: 100%;
   z-index: 1;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.2s;
 }
 .active-slide{
   opacity: 1;
@@ -62,14 +67,23 @@ button{
 
 
 /* Added Media Queries for the button */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) { 
+    h1 {
+        text-align: center;
+        font-size: 25px;
+        }
+    
+    p {
+        font-size: 15px;
+    }
+    
     .question {
-        font-size: 20px;
-        margin-bottom: 50px;
+        font-size: 15px;
+        margin-top: 5%;
     }
 
     .answers {
-        font-size: 20px;
+        font-size: 15px;
         margin-bottom: 20px;
         text-align: left;
         display: inline-block;
@@ -80,7 +94,7 @@ button{
         cursor: pointer;
         height: 60px;
         position: relative;
-        margin-top: 35%;
+        margin-top: 15%;
         background-color: #0000FF;
         border: 0px;
         border-radius: 3px;
@@ -90,13 +104,22 @@ button{
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .question {
+    h1 {
+        text-align: center;
         font-size: 25px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+
+    .question {
+        font-size: 15px;
         margin-bottom: 50px;
     }
 
     .answers {
-        font-size: 25px;
+        font-size: 15px;
         margin-bottom: 20px;
         text-align: left;
         display: inline-block;
@@ -107,7 +130,7 @@ button{
         cursor: pointer;
         height: 60px;
         position: relative;
-        margin-top: 35%;
+        margin-top: 15%;
         background-color: #0000FF;
         border: 0px;
         border-radius: 3px;
@@ -117,55 +140,108 @@ button{
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
     .question {
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 50px;
     }
-
-    .answers {
-        font-size: 30px;
-        margin-bottom: 20px;
-        text-align: left;
-        display: inline-block;
+    
+        .answers {
+            font-size: 25px;
+            margin-bottom: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+    
+        button {
+            font-size: 20px;
+            cursor: pointer;
+            height: 60px;
+            position: relative;
+            margin-top: 15%;
+            background-color: #0000FF;
+            border: 0px;
+            border-radius: 3px;
+            padding: 20px;
+            color: #FFFFFF;
+        }
     }
-
-    button {
-        font-size: 30px;
-        cursor: pointer;
-        height: 60px;
-        position: relative;
-        margin-top: 25%;
-        background-color: #0000FF;
-        border: 0px;
-        border-radius: 3px;
-        padding: 20px;
-        color: #FFFFFF;
-    }
-}
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    .question {
-        font-size: 40px;
-        margin-bottom: 50px;
+    h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 25px;
+        }
+    
+        .question {
+            font-size: 35px;
+            margin-bottom: 50px;
+        }
+    
+        .answers {
+            font-size: 35px;
+            margin-bottom: 20px;
+            text-align: left;
+            display: inline-block;
+        }
+    
+        button {
+            font-size: 20px;
+            cursor: pointer;
+            height: 60px;
+            position: relative;
+            margin-top: 15%;
+            background-color: #0000FF;
+            border: 0px;
+            border-radius: 3px;
+            padding: 20px;
+            color: #FFFFFF;
+        }
     }
-
-    .answers {
-        font-size: 40px;
-        margin-bottom: 20px;
-        text-align: left;
-        display: inline-block;
-    }
-
-    button {
-        font-size: 40px;
-        cursor: pointer;
-        height: 60px;
-        position: relative;
-        margin-top: 25%;
-        background-color: #0000FF;
-        border: 0px;
-        border-radius: 3px;
-        padding: 20px;
-        color: #FFFFFF;
-    }
-}
+    @media screen and (min-width: 1201px) and (max-width: 1400px) {
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            }
+    
+            p {
+                font-size: 25px;
+            }
+    
+            .question {
+                font-size: 35px;
+                margin-bottom: 50px;
+            }
+    
+            .answers {
+                font-size: 35px;
+                margin-bottom: 20px;
+                text-align: left;
+                display: inline-block;
+            }
+    
+            button {
+                font-size: 20px;
+                cursor: pointer;
+                height: 60px;
+                position: relative;
+                margin-top: 15%;
+                background-color: #0000FF;
+                border: 0px;
+                border-radius: 3px;
+                padding: 20px;
+                color: #FFFFFF;
+            }
+        }
