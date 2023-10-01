@@ -46,6 +46,45 @@ button{
     color: #FFFFFF;
 }
 
+#previous-question {
+    font-size: 50px;
+    cursor: pointer;
+    height: 80px;
+    position: relative;
+    margin-top: 15%;
+    background-color: #0000FF;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+#next-question {
+    font-size: 50px;
+    cursor: pointer;
+    height: 80px;
+    position: relative;
+    margin-top: 15%;
+    background-color: #0000FF;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+#restart {
+    font-size: 50px;
+    cursor: pointer;
+    height: 80px;
+    position: relative;
+    margin-top: 3%;
+    background-color: #0000FF;
+    border: 00px;
+    border-radius: 3px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
 .slide{
   position: absolute;
   left: 0px;
@@ -78,7 +117,7 @@ button{
     }
     
     .question {
-        font-size: 15px;
+        font-size: 10px;
         margin-top: 5%;
     }
 
@@ -89,7 +128,7 @@ button{
         display: inline-block;
     }
 
-    button {
+    #previous-question {
         font-size: 15px;
         cursor: pointer;
         height: 60px;
@@ -101,6 +140,32 @@ button{
         padding: 20px;
         color: #FFFFFF;
         }  
+
+    #next-question {
+        font-size: 15px;
+        cursor: pointer;
+        height: 60px;
+        position: relative;
+        margin-top: 15%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 20px;
+        color: #FFFFFF;
+        }
+
+    #restart {
+        font-size: 10px;
+        cursor: pointer;
+        height: 40px;
+        position: relative;
+        margin-top: 10%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 20px;
+        color: #FFFFFF;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {

@@ -81,6 +81,7 @@
     const quizContainer = document.getElementById('quiz');
     const resultsContainer = document.getElementById('results');
     const submitButton = document.getElementById('submit');
+
     const myQuestions = [
         {
             question: "1. Who won the first ever Premier League Trophy in the 1992-93 season?",
@@ -395,18 +396,23 @@
     ];
 
 
-    createQuiz();
 
+    createQuiz();
     
     const previousButton = document.getElementById("previous-question");
     const nextButton = document.getElementById("next-question");
+    const refreshButton = document.getElementById("restart")
     const slides = document.querySelectorAll(".slide");
     let currentSlide = 0;
 
-   
+    const refreshPage = () => {
+        location.reload();
+    }
+
     showSlide(currentSlide);
 
-    submitButton.addEventListener('click', showResults);
+    submitButton.addEventListener("click", showResults);
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
+    refreshButton.addEventListener("click", refreshPage)
 })();
