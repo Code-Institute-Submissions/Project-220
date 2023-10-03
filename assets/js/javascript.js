@@ -5,19 +5,20 @@
         myQuestions.forEach(
             (currentQuestion, questionNumber) => {
                 const answers = [];
-                for (letter in currentQuestion.answers) {
-
-                    answers.push(
-                        `<label>
+                for (var letter in currentQuestion.answers) {
+                    if (currentQuestion.answers.hasOwnProperty(letter)) {
+                        answers.push(
+                            `<label>
                          <input type="radio" name="question${questionNumber}" value="${letter}">
                          ${letter} :
                          ${currentQuestion.answers[letter]}
                          </label>`
-                    );
+                        );
+                    }
                 }
 
-        output.push(
-            `<div class="slide">
+                output.push(
+                    `<div class="slide">
             <div class="question"> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join("")} </div>
           </div>`
@@ -398,21 +399,21 @@
 
 
     createQuiz();
-    
+
     const previousButton = document.getElementById("previous-question");
     const nextButton = document.getElementById("next-question");
-    const refreshButton = document.getElementById("restart")
+    const refreshButton = document.getElementById("restart");
     const slides = document.querySelectorAll(".slide");
     let currentSlide = 0;
 
     const refreshPage = () => {
         location.reload();
-    }
+    };
 
     showSlide(currentSlide);
 
     submitButton.addEventListener("click", showResults);
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
-    refreshButton.addEventListener("click", refreshPage)
+    refreshButton.addEventListener("click", refreshPage);
 })();
