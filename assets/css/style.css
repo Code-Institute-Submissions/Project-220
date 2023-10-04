@@ -200,6 +200,7 @@ p {
     .question {
         font-size: 20px;
         margin-top: 5%;
+        color: #FFFFFF;
     }
 
     .answers {
@@ -207,6 +208,7 @@ p {
         margin-bottom: 15px;
         text-align: left;
         display: inline-block;
+        color: #FFFFFF;
     }
 
     #submit {
@@ -275,6 +277,7 @@ p {
     .question {
         font-size: 20px;
         margin-top: 5%;
+        color: #FFFFFF;
     }
 
     .answers {
@@ -282,6 +285,7 @@ p {
         margin-bottom: 15px;
         text-align: left;
         display: inline-block;
+        color: #FFFFFF;
     }
 
     #submit {
@@ -344,12 +348,13 @@ p {
     }
 
     p {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .question {
         font-size: 25px;
         margin-bottom: 50px;
+        color: #FFFFFF;
     }
 
     .answers {
@@ -357,6 +362,7 @@ p {
         margin-bottom: 20px;
         text-align: left;
         display: inline-block;
+        color: #FFFFFF;
     }
 
     #submit {
@@ -419,12 +425,13 @@ p {
     }
 
     p {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .question {
         font-size: 35px;
         margin-bottom: 50px;
+        color: #FFFFFF;
     }
 
     .answers {
@@ -432,6 +439,7 @@ p {
         margin-bottom: 20px;
         text-align: left;
         display: inline-block;
+        color: #FFFFFF;
     }
 
     #submit {
