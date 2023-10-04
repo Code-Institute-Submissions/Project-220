@@ -1,11 +1,10 @@
 body {
     font-family: 'Inter', sans-serif;
     text-align: center;
-    background-color: purple;
+    background-image: url('../images/background.jpg');
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    color: black;
 }
 
 html {
@@ -24,7 +23,6 @@ p {
 .question {
     font-size: 40px;
     margin-bottom: 40px;
-    color: #FFFFFF;
 }
 
 .answers {
@@ -32,7 +30,6 @@ p {
     margin-bottom: 50px;
     text-align: left;
     display: inline-block;
-    color: #FFFFFF;
 }
 
 .answers label {
@@ -214,28 +211,28 @@ p {
 
     #submit {
         font-size: 20px;
-            cursor: pointer;
-            height: 40px;
-            position: relative;
-            margin-top: 17%;
-            background-color: #0000FF;
-            border: 0px;
-            border-radius: 3px;
-            padding: 10px;
-            color: #FFFFFF;
+        cursor: pointer;
+        height: 40px;
+        position: relative;
+        margin-top: 17%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 10px;
+        color: #FFFFFF;
     }
 
     #previous-question {
         font-size: 20px;
-            cursor: pointer;
-            height: 40px;
-            position: relative;
-            margin-top: 17%;
-            background-color: #0000FF;
-            border: 0px;
-            border-radius: 3px;
-            padding: 10px;
-            color: #FFFFFF;
+        cursor: pointer;
+        height: 40px;
+        position: relative;
+        margin-top: 17%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 10px;
+        color: #FFFFFF;
     }
 
     #next-question {
@@ -253,15 +250,15 @@ p {
 
     #restart {
         font-size: 20px;
-            cursor: pointer;
-            height: 40px;
-            position: relative;
-            margin-top: 5%;
-            background-color: #0000FF;
-            border: 0px;
-            border-radius: 3px;
-            padding: 10px;
-            color: #FFFFFF;
+        cursor: pointer;
+        height: 40px;
+        position: relative;
+        margin-top: 5%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 10px;
+        color: #FFFFFF;
     }
 }
 
@@ -298,7 +295,7 @@ p {
         border-radius: 3px;
         padding: 15px;
         color: #FFFFFF;
-        }
+    }
 
     #previous-question {
         font-size: 20px;
@@ -362,57 +359,57 @@ p {
         display: inline-block;
     }
 
-        #submit {
-            font-size: 25px;
-            cursor: pointer;
-            height: 50px;
-            position: relative;
-            margin-top: 8%;
-            background-color: #0000FF;
-            border: 0px;
-            border-radius: 3px;
-            padding: 15px;
-            color: #FFFFFF;
-        }
-    
-        #previous-question {
-            font-size: 25px;
-            cursor: pointer;
-            height: 50px;
-            position: relative;
-            margin-top: 8%;
-            background-color: #0000FF;
-            border: 0px;
-            border-radius: 3px;
-            padding: 15px;
-            color: #FFFFFF;
-        }
-    
-        #next-question {
-            font-size: 25px;
-            cursor: pointer;
-            height: 50px;
-            position: relative;
-            margin-top: 8%;
-            background-color: #0000FF;
-            border: 0px;
-            border-radius: 3px;
-            padding: 15px;
-            color: #FFFFFF;
-        }
-    
-        #restart {
-            font-size: 25px;
-            cursor: pointer;
-            height: 50px;
-            position: relative;
-            margin-top: 5%;
-            background-color: #0000FF;
-            border: 0px;
-            border-radius: 3px;
-            padding: 15px;
-            color: #FFFFFF;
-        }
+    #submit {
+        font-size: 25px;
+        cursor: pointer;
+        height: 50px;
+        position: relative;
+        margin-top: 8%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 15px;
+        color: #FFFFFF;
+    }
+
+    #previous-question {
+        font-size: 25px;
+        cursor: pointer;
+        height: 50px;
+        position: relative;
+        margin-top: 8%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 15px;
+        color: #FFFFFF;
+    }
+
+    #next-question {
+        font-size: 25px;
+        cursor: pointer;
+        height: 50px;
+        position: relative;
+        margin-top: 8%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 15px;
+        color: #FFFFFF;
+    }
+
+    #restart {
+        font-size: 25px;
+        cursor: pointer;
+        height: 50px;
+        position: relative;
+        margin-top: 5%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 15px;
+        color: #FFFFFF;
+    }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
@@ -437,55 +434,55 @@ p {
         display: inline-block;
     }
 
-        #submit {
-            font-size: 25px;
-            cursor: pointer;
-            height: 50px;
-            position: relative;
-            margin-top:12%;
-            background-color: #0000FF;
-            border: 0px;
-            border-radius: 3px;
-            padding: 15px;
-            color: #FFFFFF;
-        }
-    
-        #previous-question {
-            font-size: 25px;
-            cursor: pointer;
-            height: 50px;
-            position: relative;
-            margin-top: 8%;
-            background-color: #0000FF;
-            border: 0px;
-            border-radius: 3px;
-            padding: 15px;
-            color: #FFFFFF;
-        }
-    
-        #next-question {
-            font-size: 25px;
-            cursor: pointer;
-            height: 50px;
-            position: relative;
-            margin-top: 15%;
-            background-color: #0000FF;
-            border: 0px;
-            border-radius: 3px;
-            padding: 15px;
-            color: #FFFFFF;
-        }
-    
-        #restart {
-            font-size: 25px;
-            cursor: pointer;
-            height: 50px;
-            position: relative;
-            margin-top: 3%;
-            background-color: #0000FF;
-            border: 0px;
-            border-radius: 3px;
-            padding: 15px;
-            color: #FFFFFF;
-        }
+    #submit {
+        font-size: 25px;
+        cursor: pointer;
+        height: 50px;
+        position: relative;
+        margin-top: 12%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 15px;
+        color: #FFFFFF;
+    }
+
+    #previous-question {
+        font-size: 25px;
+        cursor: pointer;
+        height: 50px;
+        position: relative;
+        margin-top: 12%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 15px;
+        color: #FFFFFF;
+    }
+
+    #next-question {
+        font-size: 25px;
+        cursor: pointer;
+        height: 50px;
+        position: relative;
+        margin-top: 12%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 15px;
+        color: #FFFFFF;
+    }
+
+    #restart {
+        font-size: 25px;
+        cursor: pointer;
+        height: 50px;
+        position: relative;
+        margin-top: 3%;
+        background-color: #0000FF;
+        border: 0px;
+        border-radius: 3px;
+        padding: 15px;
+        color: #FFFFFF;
+    }
 }
