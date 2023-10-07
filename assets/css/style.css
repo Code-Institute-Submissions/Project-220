@@ -3,22 +3,28 @@ body {
     text-align: center;
     background-image: url('../images/background.jpg');
     background-size: cover;
-    margin: 0;
-    padding: 0;
+    color: white;
 }
 
 html {
     height: 100%;
-    width :100%;
+    width: 100%;
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
+    color: black;
 }
 
 p {
     font-size: 30px;
+    color:black;
+}
+
+.feedback {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
 }
 
 .question {
@@ -78,16 +84,13 @@ p {
 }
 
 #restart {
-    font-size: 50px;
     cursor: pointer;
-    height: 80px;
-    position: relative;
-    margin-top: 3%;
-    background-color: #0000FF;
-    border: 00px;
-    border-radius: 3px;
-    padding: 10px;
-    color: #FFFFFF;
+    font-size: 30px;
+}
+
+#instruction {
+    cursor: pointer;
+    font-size: 30px;
 }
 
 .slide {
@@ -103,6 +106,7 @@ p {
 .active-slide {
     opacity: 1;
     z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .quiz-container {
@@ -115,12 +119,12 @@ p {
 /* Added Media Queries for the button */
 @media screen and (min-width: 320px) and (max-width: 480px) {
     body {
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    background-image: url('../images/background.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        background-image: url('../images/background.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     h1 {
@@ -184,27 +188,24 @@ p {
     }
 
     #restart {
-        font-size: 15px;
         cursor: pointer;
-        height: 30px;
-        position: relative;
-        margin-top: 7%;
-        background-color: #0000FF;
-        border: 0px;
-        border-radius: 3px;
-        padding: 10px;
-        color: #FFFFFF;
+        font-size: 15px;
+    }
+
+    #instruction {
+        cursor: pointer;
+        font-size: 15px;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     body {
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    background-image: url('../images/background.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        background-image: url('../images/background.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     h1 {
@@ -219,7 +220,6 @@ p {
     .question {
         font-size: 20px;
         margin-top: 5%;
-        color: #FFFFFF;
     }
 
     .answers {
@@ -227,7 +227,6 @@ p {
         margin-bottom: 15px;
         text-align: left;
         display: inline-block;
-        color: #FFFFFF;
     }
 
     #submit {
@@ -270,16 +269,13 @@ p {
     }
 
     #restart {
-        font-size: 20px;
         cursor: pointer;
-        height: 40px;
-        position: relative;
-        margin-top: 5%;
-        background-color: #0000FF;
-        border: 0px;
-        border-radius: 3px;
-        padding: 10px;
-        color: #FFFFFF;
+        font-size: 18px;
+    }
+
+    #instruction {
+        cursor: pointer;
+        font-size: 18px;
     }
 }
 
@@ -305,7 +301,6 @@ p {
     .question {
         font-size: 20px;
         margin-top: 5%;
-        color: #FFFFFF;
     }
 
     .answers {
@@ -313,7 +308,6 @@ p {
         margin-bottom: 15px;
         text-align: left;
         display: inline-block;
-        color: #FFFFFF;
     }
 
     #submit {
@@ -358,14 +352,10 @@ p {
     #restart {
         font-size: 20px;
         cursor: pointer;
-        height: 50px;
-        position: relative;
-        margin-top: 5%;
-        background-color: #0000FF;
-        border: 0px;
-        border-radius: 3px;
-        padding: 15px;
-        color: #FFFFFF;
+    }
+    #instruction {
+        font-size: 20px;
+        cursor: pointer;
     }
 }
 
@@ -391,7 +381,6 @@ p {
     .question {
         font-size: 25px;
         margin-bottom: 50px;
-        color: #FFFFFF;
     }
 
     .answers {
@@ -399,7 +388,6 @@ p {
         margin-bottom: 20px;
         text-align: left;
         display: inline-block;
-        color: #FFFFFF;
     }
 
     #submit {
@@ -444,14 +432,11 @@ p {
     #restart {
         font-size: 25px;
         cursor: pointer;
-        height: 50px;
-        position: relative;
-        margin-top: 5%;
-        background-color: #0000FF;
-        border: 0px;
-        border-radius: 3px;
-        padding: 15px;
-        color: #FFFFFF;
+    }
+
+    #instruction {
+        font-size: 25px;
+        cursor: pointer;
     }
 }
 
@@ -477,7 +462,6 @@ p {
     .question {
         font-size: 35px;
         margin-bottom: 50px;
-        color: #FFFFFF;
     }
 
     .answers {
@@ -485,7 +469,6 @@ p {
         margin-bottom: 20px;
         text-align: left;
         display: inline-block;
-        color: #FFFFFF;
     }
 
     #submit {
@@ -528,15 +511,12 @@ p {
     }
 
     #restart {
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    #instruction {
         font-size: 25px;
         cursor: pointer;
-        height: 50px;
-        position: relative;
-        margin-top: 3%;
-        background-color: #0000FF;
-        border: 0px;
-        border-radius: 3px;
-        padding: 15px;
-        color: #FFFFFF;
     }
 }

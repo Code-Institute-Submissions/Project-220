@@ -78,10 +78,15 @@
         showSlide(currentSlide - 1);
     }
 
+    function showMessage() {
+        alert(" 1. 31 Questions about each of the 31 years in Premier League History.\n 2. Click either a,b,c or d lick next question to show the next question.\n 3.Once you have answered all the questions and clicked submit click the previous button to see what questions you got correct!");
+    }
+
 
     const quizContainer = document.getElementById('quiz');
     const resultsContainer = document.getElementById('results');
     const submitButton = document.getElementById('submit');
+    
 
     const myQuestions = [
         {
@@ -400,6 +405,7 @@
 
     createQuiz();
 
+    const instructionButton = document.getElementById("instruction");
     const previousButton = document.getElementById("previous-question");
     const nextButton = document.getElementById("next-question");
     const refreshButton = document.getElementById("restart");
@@ -412,6 +418,7 @@
 
     showSlide(currentSlide);
 
+    instructionButton.addEventListener("click", showMessage);
     submitButton.addEventListener("click", showResults);
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
